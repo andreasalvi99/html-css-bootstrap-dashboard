@@ -25,10 +25,7 @@
   <body>
     <!-- Header (navbar)-->
     <header>
-      <nav
-        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
-        data-bs-theme="dark"
-      >
+      <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body">
         <div class="container-fluid">
           <img
             src="./img/duck.png"
@@ -52,25 +49,23 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >Catalogo Libri</a
+                  ><span class="text-light">Catalogo Libri</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Anagrafica Utenti</a>
+                <a class="nav-link" href="#"
+                  ><span class="text-secondary">Anagrafica Utenti</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Storico Prestiti </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+                <a class="nav-link" href="#">
+                  <span class="text-secondary">Storico Prestiti</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Help</a>
+                <a class="nav-link" aria-disabled="true"
+                  ><span class="text-secondary">Help</span></a
+                >
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -104,7 +99,9 @@
             <thead>
               <tr>
                 <th scope="col">Titolo</th>
-                <th scope="col">Data Prestito</th>
+                <th scope="col" class="date d-none d-md-table-cell">
+                  Data Prestito
+                </th>
                 <th scope="col">Stato</th>
                 <th scope="col" class="text-center">Azioni</th>
               </tr>
@@ -116,7 +113,7 @@
                     >I pilastri della terra</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -133,7 +130,7 @@
                     >I promessi sposi</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -150,8 +147,12 @@
                     >Il signore degli anelli</span
                   >
                 </th>
-                <td>-</td>
-                <td><span class="badge text-bg-warning">In prestito</span></td>
+                <td class="date d-none d-md-table-cell">18/10/2023</td>
+                <td>
+                  <span class="badge text-bg-warning"
+                    ><span class="value text-light">In prestito</span></span
+                  >
+                </td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
                     <i class="bi bi-pencil-fill"></i>
@@ -167,7 +168,7 @@
                     >Harry Potter e la pietra filosofale</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -184,7 +185,7 @@
                     >Il codice Da Vinci</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td>
                   <span class="badge text-bg-danger">Non disponibile</span>
                 </td>
@@ -201,7 +202,7 @@
                 <th scope="row">
                   <span class="text-body-secondary fw-normal">Shining</span>
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -218,8 +219,12 @@
                     >La divina commedia</span
                   >
                 </th>
-                <td>-</td>
-                <td><span class="badge text-bg-warning">In prestito</span></td>
+                <td class="date d-none d-md-table-cell">21/09/2023</td>
+                <td>
+                  <span class="badge text-bg-warning"
+                    ><span class="value text-light">In prestito</span></span
+                  >
+                </td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
                     <i class="bi bi-pencil-fill"></i>
@@ -235,7 +240,7 @@
                     >Il trono di spade</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -252,7 +257,7 @@
                     >Il mondo di Sofia</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td>
                   <span class="badge text-bg-danger">Non disponibile</span>
                 </td>
@@ -272,8 +277,12 @@
                     l'armadio</span
                   >
                 </th>
-                <td>-</td>
-                <td><span class="badge text-bg-warning">In prestito</span></td>
+                <td class="date d-none d-md-table-cell">25/07/2023</td>
+                <td>
+                  <span class="badge text-bg-warning"
+                    ><span class="value text-light">In prestito</span></span
+                  >
+                </td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
                     <i class="bi bi-pencil-fill"></i>
@@ -289,7 +298,7 @@
                     >Il piccolo principe</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -306,7 +315,7 @@
                     >La storia infinita</span
                   >
                 </th>
-                <td>-</td>
+                <td class="date d-none d-md-table-cell">-</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td class="text-center">
                   <button type="button" class="btn btn-outline-dark btn-small">
@@ -325,7 +334,7 @@
         <div class="col-sm-12 col-lg-4">
           <!-- ToDo list -->
           <section class="ToDO">
-            <div class="card" style="width: 20rem">
+            <div class="card w-100" style="width: 20rem">
               <div class="card-header fs-3">ToDo</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item my-3">
@@ -371,7 +380,7 @@
 
           <!-- FAQ -->
           <section class="FAQ mt-4">
-            <div class="card" style="width: 20rem">
+            <div class="card w-100" style="width: 20rem">
               <div class="card-header fs-3">F.A.Q.</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
