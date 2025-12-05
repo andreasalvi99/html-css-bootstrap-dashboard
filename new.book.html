@@ -26,7 +26,7 @@
     <!-- Header (navbar)-->
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
+        class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
@@ -73,11 +73,11 @@
     </header>
 
     <!-- Main -->
-    <div class="container text-center mt-4">
+    <div class="container mt-4">
       <h1 class="text-start">Nuovo Libro</h1>
 
       <!-- Grid -->
-      <form action="">
+      <form action="https://learning.tizianonicolai.com/request-catcher/">
         <!-- 1st row -->
         <div class="row">
           <!-- 1st column -->
@@ -128,19 +128,21 @@
         <!-- 3rd row -->
         <div class="row g-3">
           <!-- 1st column -->
-          <div class="col-lg-4">
+          <div class="col-md-4 col-lg-4">
             <h2 class="fs-5 text-start mt-4">Genere</h2>
             <div class="col">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Scegli il genere</option>
-                <option value="1">Maschio</option>
-                <option value="2">Femmina</option>
+                <option value="1">Fantasy</option>
+                <option value="2">Gialli</option>
+                <option value="3">Psicologia</option>
+                <option value="4">Manga</option>
               </select>
             </div>
           </div>
 
           <!-- 2nd column -->
-          <div class="col-lg-4">
+          <div class="col-md-4 col-lg-4">
             <h2 class="fs-5 text-start mt-4">Anno di Pubblicazione</h2>
             <div class="mb-3">
               <input
@@ -153,7 +155,7 @@
           </div>
 
           <!-- 3rd column -->
-          <div class="col-lg-4">
+          <div class="col-md-4 col-lg-4">
             <h2 class="fs-5 text-start mt-4">ISBN#</h2>
             <div class="mb-3">
               <input
@@ -169,7 +171,7 @@
         <hr class="mt-5" />
 
         <!-- 4th row -->
-        <div class="row">
+        <div class="row align-items-start">
           <div class="col">
             <div class="mb-3">
               <h2 class="fs-5 text-start mt-4">Note</h2>
@@ -192,10 +194,10 @@
               </label>
             </div>
           </div>
-          <button type="button" class="btn btn-primary mt-2">
-            Aggiungi libro
-          </button>
         </div>
+        <button type="button" class="btn btn-primary mt-2">
+          Aggiungi Libro
+        </button>
       </form>
     </div>
     <script
